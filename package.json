@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs --config docs/.vuepress/config.ts",
+    "build": "vuepress build docs --config docs/.vuepress/config.prod.ts",
     "lint": "gts lint",
     "lint:fix": "eslint --fix --ext .js,.ts,.vue",
     "lint-staged": "lint-staged",
