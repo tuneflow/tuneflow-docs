@@ -2,7 +2,7 @@ import { defaultTheme } from 'vuepress';
 import { defineUserConfig } from 'vuepress';
 
 export default defineUserConfig({
-  base: '/help/',
+  base: '/',
   locales: {
     '/': {
       lang: 'en-US',
