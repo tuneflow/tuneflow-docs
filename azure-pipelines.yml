@@ -19,3 +19,9 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- script: |
+    cd ~/
+    wget https://gosspublic.alicdn.com/ossutil/1.7.14/ossutil64
+    chmod 755 ossutil64
+  displayName: 'Install ossutil'
