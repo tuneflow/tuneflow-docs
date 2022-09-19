@@ -4,6 +4,6 @@ description: TuneFlow Help
 footer: Copyright © 2022 TuneFlow
 ---
 
-[中文](/help/zh/)
+[中文](/zh/)
 
-[English](/help/en/)
+[English](/en/)
