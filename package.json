@@ -1,0 +1,61 @@
+{
+  "name": "tuneflow-docs",
+  "version": "1.0.0",
+  "description": "Documentation for TuneFlow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lint": "gts lint",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue",
+    "lint-staged": "lint-staged",
+    "lint-staged:ts": "eslint --ext .js,.ts,.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andantei/tuneflow-docs.git"
+  },
+  "keywords": [
+    "TuneFlow",
+    "documentation",
+    "docs"
+  ],
+  "author": "Andantei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andantei/tuneflow-docs/issues"
+  },
+  "homepage": "https://github.com/andantei/tuneflow-docs#readme",
+  "devDependencies": {
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "vuepress": "^2.0.0-beta.51",
+    "prettier": "^2.4.1",
+    "lint-staged": "^11.1.2",
+    "husky": "^7.0.2",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-markdown": "^2.0.0",
+    "eslint-plugin-no-explicit-type-exports": "^0.12.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^7.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged;"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,less,vue,md}": [
+      "git add",
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.less": "stylelint --syntax less"
+  }
+}
