@@ -47,6 +47,10 @@ export default defineUserConfig({
             text: '编曲与制作',
             link: '/zh/editing-tracks/',
           },
+          {
+            text: '使用条款',
+            link: '/zh/terms-of-service/',
+          },
         ],
         sidebar: {
           '/zh/getting-started/': [
@@ -64,12 +68,41 @@ export default defineUserConfig({
               children: ['/zh/editing-tracks/index.md'],
             },
           ],
+          '/zh/terms-of-service/': [
+            {
+              text: '使用条款',
+              children: ['/zh/terms-of-service/index.md', '/zh/terms-of-service/privacy.md'],
+            },
+            {
+              text: '版权与许可',
+              children: ['/zh/terms-of-service/license.md'],
+            },
+          ],
         },
       },
       '/en/': {
         selectLanguageName: 'English',
-        navbar: [],
-        sidebar: {},
+        navbar: [
+          {
+            text: 'Terms',
+            link: '/en/terms-of-service/',
+          },
+        ],
+        sidebar: {
+          '/en/terms-of-service/': [
+            {
+              text: 'Terms of Service',
+              children: [
+                '/en/terms-of-service/index.md',
+                '/en/terms-of-service/privacy.md',
+              ],
+            },
+            {
+              text: 'Copyright and Licenses',
+              children: ['/en/terms-of-service/license.md'],
+            },
+          ],
+        },
       },
     },
   }),
