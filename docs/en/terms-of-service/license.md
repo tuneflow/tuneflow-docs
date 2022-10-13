@@ -111,6 +111,12 @@ This license grants all rights to others:
 
 TuneFlow needs to store and play your work, and when permitted, allow other users to play, download, remix, your work, etc. Therefore TuneFlow, by default, is granted but not limited to the rights to reproduce, make derivative works, distribute, and publicly perform your works. These rights are not affected by which license the user chooses for their works.
 
+## What are the things to know if I want to publish a song on TuneFlow?
+
+- You will not be able to change the content of the song after publishing it. To make edits, You can create a remix of the published song.
+- You can still make changes to the song title, license, style and other metadata after publishing it.
+- If the song violates the terms of use or other licenses(e.g. copying others' work or remixing without permission, etc.), the violating song's license will be invalidated and the song could be taken down.
+- Changes to license settings have no impact on events that already occured before the changes are made. (e.g. other users already remixed/downloaded the song, etc.)
 
 <!-- prettier-ignore-start -->
 ::: tip
