@@ -61,29 +61,29 @@ This license does not grant any rights to others.
     * Commercial Use Allowed
     * Attribution Must be Given
     * Derivative Works May Use Other Licenses
-- CC BY ND 4.0
+- CC BY-ND 4.0
     * Can Download
     * No Derivative Works
     * Commercial Use Allowed
     * Attribution Must be Given
-- CC BY SA 4.0
+- CC BY-SA 4.0
     * Can Download
     * Derivative Work Allowed
     * Commercial Use Allowed
     * Attribution Must be Given
     * Derivative Works Must Use the Same or Compatible Licenses
-- CC BY NC 4.0
+- CC BY-NC 4.0
     * Can Download
     * Derivative Work Allowed
     * No Commercial Use
     * Attribution Must be Given
     * Derivative Works May Use Other Licenses
-- CC BY NC ND 4.0
+- CC BY-NC-ND 4.0
     * Can Download
     * No Derivative Works
     * No Commercial Use
     * Attribution Must be Given
-- CC BY NC SA 4.0
+- CC BY-NC-SA 4.0
     * Can Download
     * Derivative Work Allowed
     * No Commercial Use
