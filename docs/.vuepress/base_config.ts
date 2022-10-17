@@ -12,7 +12,7 @@ export default defineUserConfig({
     '/en/': {
       lang: 'en-US',
       title: 'TuneFlow Help',
-      description: 'Coming soon...',
+      description: 'TuneFlow Documatation and Help Resources',
     },
     '/zh/': {
       lang: 'zh-CN',
@@ -48,6 +48,10 @@ export default defineUserConfig({
             link: '/zh/editing-tracks/',
           },
           {
+            text: '常见问题',
+            link: '/zh/faq/',
+          },
+          {
             text: '使用条款',
             link: '/zh/terms-of-service/',
           },
@@ -68,6 +72,12 @@ export default defineUserConfig({
               children: ['/zh/editing-tracks/index.md'],
             },
           ],
+          '/zh/faq': [
+            {
+              text: '常见问题',
+              children: ['/zh/faq/index.md'],
+            },
+          ],
           '/zh/terms-of-service/': [
             {
               text: '使用条款',
@@ -84,18 +94,25 @@ export default defineUserConfig({
         selectLanguageName: 'English',
         navbar: [
           {
+            text: 'FAQ',
+            link: '/en/faq/',
+          },
+          {
             text: 'Terms',
             link: '/en/terms-of-service/',
           },
         ],
         sidebar: {
+          '/en/faq': [
+            {
+              text: 'Frequently Asked Questions',
+              children: ['/en/faq/index.md'],
+            },
+          ],
           '/en/terms-of-service/': [
             {
               text: 'Terms of Service',
-              children: [
-                '/en/terms-of-service/index.md',
-                '/en/terms-of-service/privacy.md',
-              ],
+              children: ['/en/terms-of-service/index.md', '/en/terms-of-service/privacy.md'],
             },
             {
               text: 'Copyright and Licenses',
