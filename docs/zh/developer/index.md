@@ -8,8 +8,12 @@ TuneFlow为开发者提供了一个强大且易于实现的插件平台，你可
 - 你甚至可以操控每个轨道的VST并且用算法来生成每个参数的自动化。
 - ......
 
-插件系统代码库：
-[https://github.com/andantei/tuneflow](https://github.com/andantei/tuneflow)
+插件系统的本体是[tuneflow](https://github.com/andantei/tuneflow)模块，它运行在各个平台的TuneFlow中作为编辑器的驱动引擎。我们已经开源了大部分用于支持基础编辑功能的插件，代码位于[tuneflow-plugin-basic](https://github.com/andantei/tuneflow-plugin-basic)仓库中。另外我们还为TuneFlow插件开发准备了专门的开发工具: [TuneFlow DevKit](https://github.com/andantei/tuneflow-devkit)，它可以与TuneFlow桌面版建立连接，让你在本地开发和调试自定义插件。
 
-基础插件代码库：
-[https://github.com/andantei/tuneflow-plugin-basic](https://github.com/andantei/tuneflow-plugin-basic)
+接下来让我们开始学习如何开发TuneFlow插件吧：
+
+[插件系统是如何运行的](./how-we-run-plugins.md)
+
+[TuneFlow 数据模型](./data-models.md)
+
+[开发你的第一个插件](./create-your-first-plugin.md)
