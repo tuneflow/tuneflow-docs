@@ -48,6 +48,10 @@ export default defineUserConfig({
             link: '/zh/editing-tracks/',
           },
           {
+            text: '开发者文档',
+            link: '/zh/developer/',
+          },
+          {
             text: '常见问题',
             link: '/zh/faq/',
           },
@@ -70,6 +74,18 @@ export default defineUserConfig({
             {
               text: '编曲与制作',
               children: ['/zh/editing-tracks/index.md'],
+            },
+          ],
+          '/zh/developer/': [
+            {
+              text: '开发者文档',
+              children: [
+                '/zh/developer/index.md',
+                '/zh/developer/concepts.md',
+                '/zh/developer/data-models.md',
+                '/zh/developer/how-we-run-plugins.md',
+                '/zh/developer/create-your-first-plugin.md',
+              ],
             },
           ],
           '/zh/faq': [
