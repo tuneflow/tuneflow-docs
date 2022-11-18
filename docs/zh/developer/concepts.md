@@ -34,3 +34,5 @@ TuneFlow 中的节奏单位是 BPM(Beats-per-Minute)，即每分钟的拍数。�
 一首歌曲中必须有至少一个拍号。第一个拍号必须从tick 0开始。
 :::
 <!-- prettier-ignore-end -->
+
+继续阅读：[数据模型](./data-models.md)以及[插件系统如何运转](./how-we-run-plugins.md)

@@ -88,3 +88,5 @@ MIDI 轨道和音频轨道都包含一个`audioPlugins: Array<AudioPlugin>`的�
 文件[src/models/automation.ts](https://github.com/andantei/tuneflow/blob/master/src/models/automation.ts)。音乐的魅力很大程度来源于变化，比如，某一些段落中我们需要某个乐器的声音做主导，而另一些段落中我们需要这个乐器变小声，这个时候我们就可以将轨道的音量变成一个自动化参数，从而随着时间进行变化，这个过程就是自动化(Automation)。因为我们添加的数据点可以连成一条变化的曲线，通常我们也把这个过程叫做画包络线。
 
 自动化储存在`Track`的`automation: AutomationData`属性中。`AutomationData`由两部分组成：自动化属性(`AutomationTarget`)和自动化取值(`AutomationValue`)。前者以`AutomationTarget`列表`targets: AutomationTarget[]`的形式存储在`AutomationData`中，它列出了轨道中所有拥有自动化信息的属性。后者以的形式`targetValues: { [tfAutomationTargetId: string]: AutomationValue}`存储在`AutomationData`中，它包含了每一个`AutomationTarget`对应的自动化点的数据。
+
+继续阅读：[插件系统如何运转](./how-we-run-plugins.md)以及[如何创建你的第一个插件](./create-your-first-plugin.md)
