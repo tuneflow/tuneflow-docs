@@ -82,8 +82,8 @@ export default defineUserConfig({
               children: [
                 '/zh/developer/index.md',
                 '/zh/developer/concepts.md',
-                '/zh/developer/data-models.md',
                 '/zh/developer/how-we-run-plugins.md',
+                '/zh/developer/data-models.md',
                 '/zh/developer/create-your-first-plugin.md',
               ],
             },
