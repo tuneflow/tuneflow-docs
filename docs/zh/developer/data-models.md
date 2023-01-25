@@ -2,11 +2,11 @@
 
 ![数据模型概览](./images/charts/data_models.jpg)
 
-本段建议配合对应的[代码源文件](https://github.com/andantei/tuneflow/tree/master/src/models)一起阅读。主要的数据类型如下：
+本段建议配合对应的[代码源文件](https://github.com/tuneflow/tuneflow/tree/master/src/models)一起阅读。主要的数据类型如下：
 
 ## 歌曲 (`class Song`)
 
-歌曲`class Song`，文件 [src/models/song.ts](https://github.com/andantei/tuneflow/blob/master/src/models/song.ts)。它包含了整首曲目的全部数据，里面主要包含：
+歌曲`class Song`，文件 [src/models/song.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/song.ts)。它包含了整首曲目的全部数据，里面主要包含：
 
 **全局信息**
 
@@ -27,7 +27,7 @@
 
 ## 轨道 (`class Track`)
 
-文件 [src/models/track.ts](https://github.com/andantei/tuneflow/blob/master/src/models/track.ts)。轨道有不同的类型，目前支持的轨道包括 MIDI 轨道，音频轨道和母带轨道。
+文件 [src/models/track.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/track.ts)。轨道有不同的类型，目前支持的轨道包括 MIDI 轨道，音频轨道和母带轨道。
 
 **通用轨道数据** 可以发声的轨道（MIDI，音频，母带）都包含以下数据：
 
@@ -67,7 +67,7 @@ MIDI 轨道存储在`Song`的`tracks`当中，它们只负责处理类型为`Cli
 
 ## 片段 (`class Clip`)
 
-文件 [src/models/clip.ts](https://github.com/andantei/tuneflow/blob/master/src/models/clip.ts)。片段存在于`Track`的`clips`列表中，是音符和音频的实际载体。用户可以调节片段的起始和结束位置，也可以将片段在不同的轨道中移动。
+文件 [src/models/clip.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/clip.ts)。片段存在于`Track`的`clips`列表中，是音符和音频的实际载体。用户可以调节片段的起始和结束位置，也可以将片段在不同的轨道中移动。
 
 **MIDI 片段**
 
@@ -79,13 +79,13 @@ MIDI 片段的类型(`type`)为`ClipType.MIDI_CLIP`，它只在 MIDI 轨道中�
 
 ## 音频插件 (`class AudioPlugin`)
 
-文件[src/models/audio_plugin.ts](https://github.com/andantei/tuneflow/blob/master/src/models/audio_plugin.ts)。音频插件指传统意义上用于音频处理的 VST/AU 等插件。它们可以是音源插件(Synth/Sampler)，用于将音符转换为音频；也可以是音效插件(Effects)，用于为音频添加各种各样的效果。
+文件[src/models/audio_plugin.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/audio_plugin.ts)。音频插件指传统意义上用于音频处理的 VST/AU 等插件。它们可以是音源插件(Synth/Sampler)，用于将音符转换为音频；也可以是音效插件(Effects)，用于为音频添加各种各样的效果。
 
 MIDI 轨道和音频轨道都包含一个`audioPlugins: Array<AudioPlugin>`的列表，用于存储音效插件信息。MIDI 轨道还包含一个`samplerPlugin: AudioPlugin`的属性，用于存储音源插件信息。
 
 ## 自动化 (`class AutomationData`)
 
-文件[src/models/automation.ts](https://github.com/andantei/tuneflow/blob/master/src/models/automation.ts)。音乐的魅力很大程度来源于变化，比如，某一些段落中我们需要某个乐器的声音做主导，而另一些段落中我们需要这个乐器变小声，这个时候我们就可以将轨道的音量变成一个自动化参数，从而随着时间进行变化，这个过程就是自动化(Automation)。因为我们添加的数据点可以连成一条变化的曲线，通常我们也把这个过程叫做画包络线。
+文件[src/models/automation.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/automation.ts)。音乐的魅力很大程度来源于变化，比如，某一些段落中我们需要某个乐器的声音做主导，而另一些段落中我们需要这个乐器变小声，这个时候我们就可以将轨道的音量变成一个自动化参数，从而随着时间进行变化，这个过程就是自动化(Automation)。因为我们添加的数据点可以连成一条变化的曲线，通常我们也把这个过程叫做画包络线。
 
 自动化储存在`Track`的`automation: AutomationData`属性中。`AutomationData`由两部分组成：自动化属性(`AutomationTarget`)和自动化取值(`AutomationValue`)。前者以`AutomationTarget`列表`targets: AutomationTarget[]`的形式存储在`AutomationData`中，它列出了轨道中所有拥有自动化信息的属性。后者以的形式`targetValues: { [tfAutomationTargetId: string]: AutomationValue}`存储在`AutomationData`中，它包含了每一个`AutomationTarget`对应的自动化点的数据。
 

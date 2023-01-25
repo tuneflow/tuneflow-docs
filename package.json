@@ -14,19 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andantei/tuneflow-docs.git"
+    "url": "git+https://github.com/tuneflow/tuneflow-docs.git"
   },
   "keywords": [
     "TuneFlow",
     "documentation",
     "docs"
   ],
-  "author": "Andantei",
+  "author": "TuneFlow",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andantei/tuneflow-docs/issues"
+    "url": "https://github.com/tuneflow/tuneflow-docs/issues"
   },
-  "homepage": "https://github.com/andantei/tuneflow-docs#readme",
+  "homepage": "https://github.com/tuneflow/tuneflow-docs#readme",
   "devDependencies": {
     "@vue/eslint-config-typescript": "^7.0.0",
     "@vue/eslint-config-prettier": "^6.0.0",
