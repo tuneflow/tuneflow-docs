@@ -12,6 +12,16 @@ TuneFlow 网页版地址: [https://www.tuneflow.com](https://www.tuneflow.com)
 
 如果是桌面版出现该问题，可能是第一次打开时网速较慢导致的，可以尝试关闭后重开一遍。
 
+## 安装遇到问题
+
+### Windows Defender 阻止我安装/运行 TuneFlow
+
+如果你在安装 TuneFlow 时看到如下信息，请点击 "更多信息" 并选择 "仍要运行"。
+
+![Windows Defender](../images/windows_defender_example.png)
+
+出现这个提示信息是因为我们刚刚重新续签了代码签名证书，Windows Defender 需要足够多的运行次数来对新的证书建立信任。
+
 ## 我在 TuneFlow 上生成的曲子可以商用吗？需要注明出处吗？
 
 请参见 [版权与许可](https://help.tuneflow.com/zh/terms-of-service/license.html)。
