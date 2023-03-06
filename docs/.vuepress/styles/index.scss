@@ -1,6 +1,14 @@
 html.dark {
+    --c-bg: #17171a;
+    --c-bg-lighter: rgba(255, 255, 255, .08);
     // brand colors
     --c-brand: rgb(197,99,230);
     --c-brand-light: rgb(183, 107, 208);
-    --c-tip: rgb(197,99,230);
+    --c-tip: rgba(60, 186,156, .5);
+    --c-tip-title: rgb(60, 186, 156);
+    --c-tip-bg: #232324;
+    --code-bg-color: #2a2a2b;
+    --c-text: rgba(255, 255, 255, .7);
+    --c-text-lighter: rgba(255, 255, 255, .9);
+    --c-border: #333335;
   }

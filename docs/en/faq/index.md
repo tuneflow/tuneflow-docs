@@ -40,10 +40,6 @@ Our AI models train on a large dataset of existing songs. Although we have taken
 
 If you discovered suspicious songs that are similar to existing copyrighted songs, please use the `Report a Song Problem` button under the help menu, or reach out to us directly.
 
-## I cannot use VST2 on TuneFlow Desktop
-
-Steinberg （Developer of VST2）has announced [the discontinuation of VST2](https://helpcenter.steinberg.de/hc/en-us/articles/4409561018258-VST-2-Discontinued#:~:text=The%20discontinuation%20of%20VST%202,to%20offer%20VST%202%20compatibility.) a while back. We are reaching out to them to aquire a special license, and we'll follow up if there is any progress.
-
 ## macOS plugin scan stuck at `DLSMusicDevice`
 
 It might be caused by having other DAWs running at the same time. Try closing them and try again.

@@ -6,14 +6,14 @@
 
 ## 歌曲 (`class Song`)
 
-歌曲`class Song`，文件 [src/models/song.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/song.ts)。它包含了整首曲目的全部数据，里面主要包含：
+文件 [src/models/song.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/song.ts)。它包含了整首曲目的全部数据，里面主要包含：
 
 **全局信息**
 
 - 分辨率 PPQ
   - PPQ(Pulses-per-Quater Note) 指播放时每个四分音符对应多少个`tick`。
-- 节奏轨（`Array<TempoEvent>`)
-  - 包含了所有的节奏变化。
+- 曲速轨（`Array<TempoEvent>`)
+  - 包含了所有的曲速变化。
 - 拍号轨 (`Array<TimeSignatureEvent>`)
   - 包含了所有的拍号变化。
 
@@ -61,7 +61,7 @@ MIDI 轨道存储在`Song`的`tracks`当中，它们只负责处理类型为`Cli
 
 <!-- prettier-ignore-start -->
 ::: tip
-概念上节奏和拍号都被称为轨道，但如前所述，他们只是作为相应数据的数组存储在`Song`中，并不属于`Track`类型。
+概念上曲速和拍号都被称为轨道，但如前所述，他们只是作为相应数据的数组存储在`Song`中，并不属于`Track`类型。
 :::
 <!-- prettier-ignore-end -->
 
@@ -79,13 +79,13 @@ MIDI 片段的类型(`type`)为`ClipType.MIDI_CLIP`，它只在 MIDI 轨道中�
 
 ## 音频插件 (`class AudioPlugin`)
 
-文件[src/models/audio_plugin.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/audio_plugin.ts)。音频插件指传统意义上用于音频处理的 VST/AU 等插件。它们可以是音源插件(Synth/Sampler)，用于将音符转换为音频；也可以是音效插件(Effects)，用于为音频添加各种各样的效果。
+文件 [src/models/audio_plugin.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/audio_plugin.ts)。音频插件指传统意义上用于音频处理的 VST/AU 等插件。它们可以是音源插件(Synth/Sampler)，用于将音符转换为音频；也可以是音效插件(Effects)，用于为音频添加各种各样的效果。
 
 MIDI 轨道和音频轨道都包含一个`audioPlugins: Array<AudioPlugin>`的列表，用于存储音效插件信息。MIDI 轨道还包含一个`samplerPlugin: AudioPlugin`的属性，用于存储音源插件信息。
 
 ## 自动化 (`class AutomationData`)
 
-文件[src/models/automation.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/automation.ts)。音乐的魅力很大程度来源于变化，比如，某一些段落中我们需要某个乐器的声音做主导，而另一些段落中我们需要这个乐器变小声，这个时候我们就可以将轨道的音量变成一个自动化参数，从而随着时间进行变化，这个过程就是自动化(Automation)。因为我们添加的数据点可以连成一条变化的曲线，通常我们也把这个过程叫做画包络线。
+文件 [src/models/automation.ts](https://github.com/tuneflow/tuneflow/blob/master/src/models/automation.ts)。音乐的魅力很大程度来源于变化，比如，某一些段落中我们需要某个乐器的声音做主导，而另一些段落中我们需要这个乐器变小声，这个时候我们就可以将轨道的音量变成一个自动化参数，从而随着时间进行变化，这个过程就是自动化(Automation)。因为我们添加的数据点可以连成一条变化的曲线，通常我们也把这个过程叫做画包络线。
 
 自动化储存在`Track`的`automation: AutomationData`属性中。`AutomationData`由两部分组成：自动化属性(`AutomationTarget`)和自动化取值(`AutomationValue`)。前者以`AutomationTarget`列表`targets: AutomationTarget[]`的形式存储在`AutomationData`中，它列出了轨道中所有拥有自动化信息的属性。后者以的形式`targetValues: { [tfAutomationTargetId: string]: AutomationValue}`存储在`AutomationData`中，它包含了每一个`AutomationTarget`对应的自动化点的数据。
 
