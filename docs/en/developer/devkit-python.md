@@ -34,13 +34,13 @@ python debug.py
 
 The plugin will then be loaded into a local debug server that talks to TuneFlow Desktop.
 
-Next, start **TuneFlow Desktop** and run the `Plugin Development` plugin.
+Next, start **TuneFlow Desktop** and install your plugin from the TuneFlow Plugin Library panel.
+
+![How to run the plugin in TuneFlow Desktop](./images/develop/devkit/run_plugin_exp.jpg)
 
 You will see the plugin loaded into TuneFlow Desktop in debug mode.
 
-![How to run the plugin in TuneFlow Desktop](./images/develop/devkit/run_plugin_exp.png)
-
-Run the loaded plugin in TuneFlow Desktop, you will be able to see your python plugin executed.
+After installation, you should be able to run your plugin using from the corresponding right-click menus specified in `triggers` field of you plugin in your `bundle.json`.
 
 ## Examples
 
@@ -91,7 +91,7 @@ For more information on how to debug python code in VSCode, see https://code.vis
 
 ## Making code changes when debugging your plugin
 
-When you change your plugin code, you will need to exit the devkit and restart it. Please note that **you need to exit the "Plugin Development" plugin in TuneFlow when you exit the devkit**, so that the next time you start the devkit, "Plugin Development" plugin can be initialized correctly.
+When you change your plugin code, you may need to exit the devkit and restart it. **Please note that after restarting the devkit, you may also need to re-install your plugin in TuneFlow**, so that the next time you run your plugin, it can be initialized correctly from the latest version.
 
 ## Next
 

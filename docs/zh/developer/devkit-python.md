@@ -32,13 +32,13 @@ if __name__ == "__main__":
 python debug.py
 ```
 
-接下来，启动 TuneFlow Desktop 并运行 `插件开发` 插件。
-
-你将会看到我们开发中的 Python 插件以调试模式加载到了 TuneFlow Desktop 中。
+接下来，启动 TuneFlow Desktop。并在 TuneFlow 插件库中安装我们的插件。
 
 ![How to run the plugin in TuneFlow Desktop](./images/run_plugin_exp.jpg)
 
-在 TuneFlow Desktop 中运行加载的插件，你将能够看到你的 Python 插件被成功执行（或报错）。
+你将会看到我们开发中的 Python 插件以调试模式加载到了 TuneFlow Desktop 中。
+
+根据你在`bundle.json`设置中提供的`triggers`，你可以在对应的右键菜单中运行你的插件。
 
 ## 样例展示
 
@@ -89,7 +89,7 @@ python debug.py
 
 ## 在调试插件时进行代码修改
 
-当你更改插件代码后，你需要退出 Devkit 并重新启动它。\*\*请注意，当你退出开发套件时，你也需要退出 TuneFlow 中的 "插件开发" 插件，这样下次你启动开发套件时，"插件开发" 插件才可以正确初始化。
+当你更改插件代码后，你可能需要退出 Devkit 并重新启动它。**请注意，当你重新启动开发套件后，你可能也需要在 TuneFlow 中重新安装你的插件**，这样下次运行你的插件时，它才可以正确初始化。
 
 ## 下一步
 

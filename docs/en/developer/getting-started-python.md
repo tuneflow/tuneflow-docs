@@ -63,6 +63,18 @@ An example manifest file looks like this.
 
 ```
 
+Notice that for all non-internal plugins, we need to specify `triggers` and `categories`.
+
+### `triggers`
+
+It specifies which right-click menus can the plugin be triggered from. For example, `context-track-content` means that you can trigger it from the right-click menu of the track that you right-clicked on. You can specify multiple triggers, but only one of them will be triggered. For `triggers` values, see [TuneflowPluginTrigger](https://github.com/tuneflow/tuneflow-py/blob/main/src/tuneflow_py/descriptors/plugin.py#L88)
+
+When the plugin runs, its `params` will get an additional `trigger` parameter. It will include the entitie(s) that is actually triggering the plugin, so that the plugin knows which elements to process.
+
+### `categories`
+
+It specifies the categories that the plugin belongs to, so that users can find your plugin easier. For category values, see [TuneflowPluginCategory](https://github.com/tuneflow/tuneflow-py/blob/main/src/tuneflow_py/descriptors/plugin.py#L122)
+
 ### Plugin code (`plugin.py`)
 
 Under the plugin's root folder we need to create a `plugin.py` file, which is where we define the plugin code. You can put other source code under the same folder, too. When TuneFlow runs the plugin, it adds the plugin's root folder to the `PYTHONPATH`.

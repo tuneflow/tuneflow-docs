@@ -55,13 +55,34 @@ TuneFlow 插件的唯一目标是修改歌曲数据，而 DAW 将会获取修改
       "minRequiredDesktopVersion": "1.8.3",
       "options": {
         "allowReset": false
-      }
+      },
+      "triggers": [
+        {
+          "type": "context-track-content",
+          "config": {
+            "allowedTrackTypes": ["audio"]
+          }
+        }
+      ],
+      "categories": ["generate"]
     },
     ......
   ]
 }
 
 ```
+
+注意对于所有非 TuneFlow 内部的插件，我们都需要提供`triggers`和`categories`。
+
+### `triggers`
+
+它指定了插件可以在哪些元素的右键菜单中被用户运行。比如 `context-track-content` 代表可以从用户右键时的轨道的右键菜单运行。你可以指定多个 triggers，但实际执行的时候只会从某一个 trigger 触发。`triggers` 的取值请参考 [TuneflowPluginTrigger](https://github.com/tuneflow/tuneflow-py/blob/main/src/tuneflow_py/descriptors/plugin.py#L88)
+
+插件运行时，插件的参数列表 (`params`) 中将会收到一个额外的 `trigger`参数。它将会包含用户触发这个插件时的上下文信息，以供插件了解应该处理歌曲中的哪些元素。
+
+### `categories`
+
+它指定了该插件对应的类别，以便用户查找。`categories` 的取值请参考 [TuneflowPluginCategory](https://github.com/tuneflow/tuneflow-py/blob/main/src/tuneflow_py/descriptors/plugin.py#L122)
 
 ### 插件代码 (`plugin.py`)
 
