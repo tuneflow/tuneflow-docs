@@ -44,7 +44,7 @@ After installation, you should be able to run your plugin using from the corresp
 
 ## Examples
 
-The easiest way to learn how to write plugins is through examples. To view all example projects, check out https://github.com/tuneflow/tuneflow-py-demos.
+The easiest way to learn how to write plugins is through examples. To view all example projects, check out [tuneflow-py-demos](https://github.com/tuneflow/tuneflow-py-demos).
 
 ## Debug Your Plugin
 

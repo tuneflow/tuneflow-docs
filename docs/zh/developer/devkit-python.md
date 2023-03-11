@@ -42,7 +42,7 @@ python debug.py
 
 ## 样例展示
 
-学习插件开发最好的方式就是阅读现有的例子。https://github.com/tuneflow/tuneflow-py-demos 包含了大量的示例代码。
+学习插件开发最好的方式就是阅读现有的例子。[tuneflow-py-demos](https://github.com/tuneflow/tuneflow-py-demos) 包含了大量的示例代码。
 
 ## 调试插件
 
