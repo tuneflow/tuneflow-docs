@@ -126,4 +126,4 @@ Here is where you implement your main logic. The method takes in the current son
 
 ## Next
 
-Now we understood the basic lifecycle and structure of a plugin, let's actually start building one! Continue to read [Run and Debug Your Plugin Locally](./devkit-python.md)
+Now we understood the basic lifecycle and structure of a plugin, let's actually start building one! Continue to read [Python Plugin Development Guide](./python-devguide.md)

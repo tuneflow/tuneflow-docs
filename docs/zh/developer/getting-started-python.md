@@ -135,4 +135,4 @@ class HelloWorld(TuneflowPlugin):
 
 ## 下一步
 
-现在我们已经了解了插件的基本生命周期和结构，让我们实际开始构建一个插件吧！继续阅读 [在本地运行和调试您的插件](./devkit-python.md)
+现在我们已经了解了插件的基本生命周期和结构，让我们实际开始构建一个插件吧！继续阅读 [Python 插件开发指南](./python-devguide.md)

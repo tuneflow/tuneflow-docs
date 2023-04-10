@@ -88,6 +88,7 @@ export default defineUserConfig({
               text: 'Python Plugin Development',
               children: [
                 '/en/developer/getting-started-python.md',
+                '/en/developer/python-devguide.md',
                 '/en/developer/devkit-python.md',
                 '/en/developer/deploy-plugin-python.md',
               ],
@@ -164,6 +165,7 @@ export default defineUserConfig({
               text: 'Python 插件开发',
               children: [
                 '/zh/developer/getting-started-python.md',
+                '/zh/developer/python-devguide.md',
                 '/zh/developer/devkit-python.md',
                 '/zh/developer/deploy-plugin-python.md',
               ],
