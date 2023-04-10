@@ -104,4 +104,4 @@ https://<your_server_host_name>/<plugin_path_prefix>
 
 ## 发布到 TuneFlow 插件库
 
-想让你的插件出现在 TuneFlow 插件库中吗？你可以给我们的 [Demo Repository](https://github.com/tuneflow/tuneflow-py-demos) 提交 Pull Request，将你的 plugin repository 添加为一个submodule。或者直接[联系我们](mailto:contact@info.tuneflow.com)。
+想让你的插件出现在 TuneFlow 插件库中吗？你可以给我们的 [Demo Repository](https://github.com/tuneflow/tuneflow-py-demos) 提交 Pull Request，将你的 plugin repository 添加为一个 submodule。或者直接[联系我们](mailto:contact@info.tuneflow.com)。
