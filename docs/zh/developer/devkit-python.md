@@ -8,7 +8,7 @@ pip install tuneflow-devkit-py
 
 <!-- prettier-ignore-start -->
 ::: tip
-You may need to make sure the version of `tuneflow-py` is compatible with the `tuneflow-devkit-py` you are using. To do that, check the `requirements.txt` in `tuneflow-devkit-py` and see if its `tuneflow-py` is set to the same version as your `tuneflow-py`.
+大部分情况下，你只需要安装 `tuneflow-devkit-py` 就足够调试和部署你的插件了。如果你需要用到更新版本的 `tuneflow-py` 中的特性，你可以在你的`requirements.txt` 中手动指定 `tuneflow-py` 的版本。但需要注意的是你可能需要确保 `tuneflow-py` 的版本与 `tuneflow-devkit-py` 兼容。你可以查看 `tuneflow-devkit-py` 包中的 `requirements.txt` 是否与你的 `tuneflow-py` 版本是同一个小版本(minor)。
 :::
 <!-- prettier-ignore-end -->
 
