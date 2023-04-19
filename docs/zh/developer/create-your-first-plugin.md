@@ -4,7 +4,7 @@
 
 Python 插件可以让你在本地快速实验你的算法。你可以使用 tuneflow-devkit-py 来做 Python 版的 TuneFlow 插件开发。通过 `tuneflow-devkit-py` 中的 `Runner`，你也可以将插件部署到服务器上，让所有用户都可以使用你的插件。
 
-使用 Python 插件开发请继续阅读：[Python 插件开发入门](./getting-started-python.md)
+使用 Python 插件开发请继续阅读：[Python 插件入门](./getting-started-python.md)
 
 ## 用 Typescript / Javascript 进行开发
 

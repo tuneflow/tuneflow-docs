@@ -1,4 +1,4 @@
-# Python Plugin Development 101
+# Python Plugin 101
 
 The core idea of TuneFlow's plugin system is that you only care about the data model, NOT the implementation.
 
