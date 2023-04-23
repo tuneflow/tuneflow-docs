@@ -131,6 +131,10 @@ When modifying a `song`, you will often use the `tick` time unit, which is the s
 
 In case you will need to be familiar with other basic concepts, refer to [Basic Concepts](./concepts.md) for more information.
 
+## Handle exceptions
+
+If you encountered exception, don't hide it behind a `try`, simply let it throw and the plugin system will catch it and handle accordingly: the plugin status bar will turn red and a message will pop out to let the user know that this execution has failed.
+
 ## Example plugins
 
 Samples are always the fastest way to learn, and you can learn how to develop and deploy your plugins through the many open-source plugins we already have in [tuneflow-py-demos](https://github.com/tuneflow/tuneflow-py-demos). Most of them have less than 200 lines of core plugin code.
