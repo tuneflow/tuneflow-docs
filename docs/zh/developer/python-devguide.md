@@ -119,11 +119,14 @@ class YourPlugin(TuneflowPlugin):
 当用户点击运行插件后，插件需求的参数值便会由 DAW 从用户输入和内部状态中统一收集，并提供到插件 `def run(song: Song, params: dict[str, Any])` 方法中的 `params` 中，并且 `params` 中的 key 与 你定义的 `def params(song: Song)` 方法返回值中提供的 key 一一对应。要读取一个具体的参数值，只需访问 `params[keyName]` 即可。
 
 ```python
+
+from typing import Any, Dict
+
 class YourPlugin(TuneflowPlugin):
     ...
 
     @staticmethod
-    def params(song: Song) -> dict[str, ParamDescriptor]
+    def params(song: Song) -> Dict[str, ParamDescriptor]
         return {
             "myParam": {
                 ...
@@ -131,7 +134,7 @@ class YourPlugin(TuneflowPlugin):
         }
 
     @staticmethod
-    def run(song: Song, params: dict[str, Any]):
+    def run(song: Song, params: Dict[str, Any]):
         myParam = params["myParam"]
         ...
 
