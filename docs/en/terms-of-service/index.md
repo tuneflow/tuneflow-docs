@@ -17,7 +17,7 @@ For the purposes of these Terms and Conditions:
 - **"Affiliate"** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
 - **"Account"** means a unique account created for You to access our Service or parts of our Service.
-- **"Service Provider"** (referred to as either "We", "Us" or "Our" in this Agreement) refers to TuneFlow.
+- **"Service Provider"** (referred to as either "We", "Us" or "Our" in this Agreement) refers to TuneFlow Inc.
 - **"Country"** refers to United States.
 - **"Content"** refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.
 - **"Device"** means any device that can access the Service such as a computer, a cellphone or a digital tablet.

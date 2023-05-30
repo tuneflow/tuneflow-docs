@@ -4,7 +4,7 @@
 
 ## 产品介绍
 
-TuneFlow是TuneFlow（以下简称【我们】）的运营者。本《隐私政策》（以下简称【本政策】）阐述了TuneFlow将如何收集和处理您的个人信息和隐私信息。TuneFlow将严格遵守法律法规，为您提供安全、可靠的服务。网站地址：https://www.tuneflow.com。
+TuneFlow Inc.是TuneFlow（以下简称【我们】）的运营者。本《隐私政策》（以下简称【本政策】）阐述了TuneFlow将如何收集和处理您的个人信息和隐私信息。TuneFlow将严格遵守法律法规，为您提供安全、可靠的服务。网站地址：https://www.tuneflow.com。
 
 ## 我们收集的信息
 
