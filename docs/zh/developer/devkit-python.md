@@ -23,7 +23,7 @@ from your_plugin_path import YourPlugin
 from tuneflow_devkit import Debugger
 
 if __name__ == "__main__":
-    Debugger(plugin_class=YourPlugin).start()
+    Debugger(plugin_class=YourPlugin, bundle_file_path="your bundle.json file path").start()
 ```
 
 接下来，用以下指令即可启动我们的调试服务器:
